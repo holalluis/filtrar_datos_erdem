@@ -1,0 +1,73 @@
+EC-Lab ASCII FILE
+Nb header lines : 65                          
+
+IR compensation (PEIS)
+
+Run on channel : 3 (SN 4895)
+User : 
+Electrode connection : standard
+Ewe ctrl range : min = -10.00 V, max = 10.00 V
+Ewe,I filtering : 50 kHz
+Safety Limits :
+	Do not start on E overload
+Channel : Grounded
+Acquisition started on : 06/04/2018 12:45:52
+Technique started on : 06/04/2018 12:48:16
+Saved on :
+	File : GF201805_21_04_ZIR.mpr
+	Directory : C:\Users\L004\Documents\EC-Lab\Data\2018\06 June\04June_Erdem_NO3R\
+	Host : 192.109.209.127
+Device : VMP-300 (SN 0241)
+Address : 192.109.209.128
+EC-Lab for windows v11.12 (software)
+Internet server v11.12 (firmware)
+Command interpretor v11.12 (firmware)
+Electrode material : 201805_21
+Initial state : 500rpm stirring - N2 blanket
+Electrolyte : 30mM NaClO4 100ppm NaNO3
+Comments : Vacuum in 90mL
+Comments : 1 g/L GO 70% 130ºC 8h
+Current amplifier : B-2A30V
+Cable : special
+Reference electrode : Ag/AgCl Ref #7 (0.208 V)
+Electrode surface area : 2.000 cm²
+Characteristic mass : 1.000 g
+Equivalent Weight : 0.000 g/eq.
+Density : 0.000 g/cm3
+Record Ece
+Text export
+Cycle Definition : Charge/Discharge alternance
+E (V)               0.0000              
+vs.                 Eoc                 
+f                   10.000              
+unit f              kHz                 
+Va (mV)             20.0                
+pw                  0.10                
+Na                  4                   
+E range min (V)     -10.000             
+E range max (V)     10.000              
+I Range             100 mA              
+Bandwidth           5                   
+comp. level (%)     50                  
+use results         0                   
+comp. mode          Software            
+
+Number of loops : 8
+Loop 0 from point number 0 to 0
+Loop 1 from point number 1 to 1
+Loop 2 from point number 2 to 2
+Loop 3 from point number 3 to 3
+Loop 4 from point number 4 to 4
+Loop 5 from point number 5 to 5
+Loop 6 from point number 6 to 6
+Loop 7 from point number 7 to 7
+
+freq/Hz	Re(Z)/Ohm	-Im(Z)/Ohm	|Z|/Ohm	Phase(Z)/deg	time/s	<Ewe>/V	<I>/mA	I Range	|Ewe|/V	|I|/A	<Ece>/V	|Ece|/V	Phase(Zce)/deg	|Zce|/Ohm	Re(Zce)/Ohm	-Im(Zce)/Ohm	Phase(Zwe-ce)/deg	|Zwe-ce|/Ohm	Re(Zwe-ce)/Ohm	-Im(Zwe-ce)/Ohm	Re(Y)/Ohm-1	Im(Y)/Ohm-1	|Y|/Ohm-1	Phase(Y)/deg	
+1.0019525E+004	1.3322171E+001	-9.2190180E+000	1.6200943E+001	3.4683456E+001	1.448633459355769E+002	1.7418936E-001	-3.0039963E-001	38	1.9654714E-002	1.2131833E-003	1.2990435E+000	2.7759287E+000	-5.4805058E-001	2.2881362E+003	2.2880315E+003	2.1886347E+001	-3.1536967E-001	2.3013887E+003	2.3013538E+003	1.2667329E+001	5.0756820E-002	-3.5124011E-002	6.1724801E-002	-3.4683456E+001
+1.0019525E+004	1.1372872E+001	-4.0103526E+000	1.2059236E+001	1.9423895E+001	1.946433280831581E+003	1.7559583E-001	0	38	1.9351101E-002	1.6046705E-003	0	1.7200162E+000	-2.5913590E-001	1.0718812E+003	1.0718702E+003	4.8478608E+000	-4.4298157E-002	1.0832435E+003	1.0832432E+003	8.3750820E-001
+1.0019525E+004	1.1134626E+001	-3.4180822E+000	1.1647454E+001	1.7065319E+001	3.748022272875140E+003	1.7508851E-001	0	38	1.8162992E-002	1.5593958E-003	0	1.3918797E+000	-2.8990403E-001	8.9257623E+002	8.9256482E+002	4.5162196E+000	-6.9623373E-002	9.0370013E+002	9.0369946E+002	1.0981374E+000
+1.0019525E+004	1.0806577E+001	-3.1606731E+000	1.1259305E+001	1.6302975E+001	5.549611236633500E+003	1.7503031E-001	0	38	1.8028613E-002	1.6012191E-003	0	1.2956419E+000	-3.0324629E-001	8.0915967E+002	8.0914832E+002	4.2825756E+000	-7.8394845E-002	8.1995569E+002	8.1995490E+002	1.1219025E+000
+1.0019525E+004	1.0729018E+001	-3.4598708E+000	1.1273089E+001	1.7873362E+001	7.351181187528389E+003	1.7498487E-001	0	38	1.8985931E-002	1.6841816E-003	0	1.3743926E+000	-3.1478238E-001	8.1605963E+002	8.1604730E+002	4.4833999E+000	-7.0930749E-002	8.2677692E+002	8.2677631E+002	1.0235291E+000
+1.0019525E+004	1.0548162E+001	-3.0892503E+000	1.0991232E+001	1.6323776E+001	9.152638176844630E+003	1.7506373E-001	0	38	1.7702639E-002	1.6106147E-003	0	1.1540502E+000	-2.4256125E-001	7.1652783E+002	7.1652142E+002	3.0334063E+000	4.4007199E-003	7.2706958E+002	7.2706958E+002	-5.5844069E-002
+1.0019525E+004	1.0425797E+001	-3.2592106E+000	1.0923355E+001	1.7359777E+001	1.095422714304714E+004	1.7482141E-001	0	38	1.8200416E-002	1.6661929E-003	0	1.1771713E+000	-3.1820035E-001	7.0650366E+002	7.0649274E+002	3.9236495E+000	-5.3101625E-002	7.1691882E+002	7.1691852E+002	6.6443896E-001
+1.0019525E+004	1.0287319E+001	-2.9508364E+000	1.0702167E+001	1.6005121E+001	1.275581612994301E+004	1.7483771E-001	0	38	1.8523615E-002	1.7308285E-003	0	1.0532011E+000	-3.2286042E-001	6.0849530E+002	6.0848566E+002	3.4288392E+000	-4.4261046E-002	6.1877313E+002	6.1877295E+002	4.7800279E-001

@@ -1,0 +1,123 @@
+<!doctype html><html><head><meta charset=utf8><title>Data filtering</title></head><body>
+<h2>Data filtering</h2><hr>
+
+<!--load menu-->
+<div>
+  Load MPT file
+  <input id=loadFile type=file accept=".mpt" onchange="loadFile(event)">
+  <script>
+    function loadFile(evt){
+      var file=evt.target.files[0];
+      var reader=new FileReader();
+      table.innerHTML='';
+      reader.onload=function() {
+        try{
+          processa(reader.result);
+        }catch(e){alert(e)}
+      }
+      try{
+        reader.readAsText(file);
+      }catch(e){alert(e)}
+    }
+
+    function processa(text){
+      linies=text.split('\n');
+      //elimina linies buides
+      for(var i=0;i<linies.length;i++) {
+        if(linies[i]=="") {
+          linies.splice(i,1)
+          i--;
+        }
+      }
+
+      linies.forEach((linia,i)=>{
+        var newRow=table.insertRow(-1);
+        newRow.setAttribute('fila',i)
+
+        linia=linia
+          .replace('control changes', 'control_changes')
+          .replace('Ns changes',      'Ns_changes')
+          .replace('counter inc',     'counter_inc')
+          .replace('half cycle',      'half_cycle')
+          .replace(/Q charge/g,       'Q_charge')
+          .replace('Q discharge',     'Q_discharge')
+          .replace('cycle number',    'cycle_number')
+
+        var btn="<a href=# onclick=filtra_files("+i+")>"+i+"</a>";
+        newRow.insertCell(-1).innerHTML=btn;
+
+        columnes=linia.split(/\s/);
+        columnes.forEach((columna,j)=>{
+          if(columna=='')return;
+
+          //var parse_float_columna = parseFloat(columna);
+          var parse_float_columna = columna;
+          //var columna_str = isNaN(parse_float_columna) ? columna : parse_float_columna;
+          var columna_str = columna;
+
+          var newCell=newRow.insertCell(-1)
+          newCell.setAttribute('columna',j)
+          newCell.innerHTML=columna_str;
+        });
+      });
+    }
+
+    //elimina files
+    function filtra_files(numero){
+      document.querySelectorAll('#table tr[fila]')
+        .forEach(tr=>{
+          var n=parseInt(tr.getAttribute('fila'));
+          if(n<numero){
+            tr.parentNode.removeChild(tr);
+          }
+        });
+
+      //agafa la primera fila i posa-li listeners per filtra_columnes
+      var tds=document.querySelectorAll('#table tr:first-child td[columna]');
+      tds.forEach(td=>{
+        td.addEventListener('click',function(){
+          filtra_columnes(this);
+        });
+        td.style.color='red';
+        td.style.cursor='pointer';
+      });
+    }
+
+    //elimina columna n
+    function filtra_columnes(td){
+      var n=td.getAttribute('columna')
+      document.querySelectorAll('#table td[columna="'+n+'"]').forEach(td=>{
+        td.parentNode.removeChild(td);
+      });
+    }
+  </script>
+  <button onclick=table.innerHTML=''>clear table</button>
+</div><hr>
+
+<table id=table border=1 style='border:1px solid #ccc;margin:5px 0;padding:5px;font-size:smaller;background:#eee'></table>
+
+<style>
+  hr{
+    border:none;
+    border-bottom:1px solid #ccc;
+  }
+  #table a {
+    display:inline-block;
+    width:40px;
+    border-right:1px solid #ccc;
+    background:#fafafa;
+    text-decoration:none;
+  }
+  #table tr:hover a {
+    background:lightblue;
+  }
+  #table {
+    overflow-x:auto;
+    border-collapse:collapse;
+  }
+</style>
+
+<script>
+  //DOM selectors
+  var table=document.querySelector('#table');
+</script>

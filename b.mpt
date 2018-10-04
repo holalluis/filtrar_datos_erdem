@@ -1,0 +1,59 @@
+EC-Lab ASCII FILE
+Nb header lines : 58                          
+
+IR compensation (PEIS)
+
+Run on channel : 3 (SN 4895)
+User : 
+Electrode connection : standard
+Ewe ctrl range : min = -10.00 V, max = 10.00 V
+Ewe,I filtering : 50 kHz
+Safety Limits :
+	Do not start on E overload
+Channel : Grounded
+Acquisition started on : 06/04/2018 12:45:52
+Technique started on : 06/04/2018 12:46:03
+Saved on :
+	File : GF201805_21_02_ZIR.mpr
+	Directory : C:\Users\L004\Documents\EC-Lab\Data\2018\06 June\04June_Erdem_NO3R\
+	Host : 192.109.209.127
+Device : VMP-300 (SN 0241)
+Address : 192.109.209.128
+EC-Lab for windows v11.12 (software)
+Internet server v11.12 (firmware)
+Command interpretor v11.12 (firmware)
+Electrode material : 201805_21
+Initial state : 500rpm stirring - N2 blanket
+Electrolyte : 30mM NaClO4 100ppm NaNO3
+Comments : Vacuum in 90mL
+Comments : 1 g/L GO 70% 130ºC 8h
+Current amplifier : B-2A30V
+Cable : special
+Reference electrode : Ag/AgCl Ref #7 (0.208 V)
+Electrode surface area : 2.000 cm²
+Characteristic mass : 1.000 g
+Equivalent Weight : 0.000 g/eq.
+Density : 0.000 g/cm3
+Record Ece
+Text export
+Cycle Definition : Charge/Discharge alternance
+E (V)               0.0000              
+vs.                 Eoc                 
+f                   10.000              
+unit f              kHz                 
+Va (mV)             20.0                
+pw                  0.10                
+Na                  4                   
+E range min (V)     -10.000             
+E range max (V)     10.000              
+I Range             100 mA              
+Bandwidth           5                   
+comp. level (%)     50                  
+use results         0                   
+comp. mode          Software            
+
+Number of loops : 1
+Loop 0 from point number 0 to 0
+
+freq/Hz	Re(Z)/Ohm	-Im(Z)/Ohm	|Z|/Ohm	Phase(Z)/deg	time/s	<Ewe>/V	<I>/mA	I Range	|Ewe|/V	|I|/A	<Ece>/V	|Ece|/V	Phase(Zce)/deg	|Zce|/Ohm	Re(Zce)/Ohm	-Im(Zce)/Ohm	Phase(Zwe-ce)/deg	|Zwe-ce|/Ohm	Re(Zwe-ce)/Ohm	-Im(Zwe-ce)/Ohm	Re(Y)/Ohm-1	Im(Y)/Ohm-1	|Y|/Ohm-1	Phase(Y)/deg	
+1.0019525E+004	1.3775129E+001	-5.2381225E+000	1.4737439E+001	2.0819778E+001	1.149254531157203E+001	1.7448008E-001	1.9840708E-003	38	1.8185070E-002	1.2339369E-003	6.5123832E-001	1.9004843E+000	-4.0080103E-001	1.5401796E+003	1.5401418E+003	1.0773927E+001	-2.0411442E-001	1.5539269E+003	1.5539170E+003	5.5358043E+000	6.3423708E-002	-2.4117464E-002	6.7854397E-002	-2.0819778E+001
