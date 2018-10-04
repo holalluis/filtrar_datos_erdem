@@ -1,0 +1,4 @@
+#filtar datos
+
+1. via terminal, with "./extract.sh [filename.mpt]"
+2. via web,  with "index.html"
